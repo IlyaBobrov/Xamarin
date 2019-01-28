@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:local="clr-namespace:task1"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="task1.MainPage"
+             Title="MainPage">
+
+    
+        <TableView Intent="Menu" 
+                   BackgroundColor="WhiteSmoke" 
+                   Margin="10">
+            <TableRoot >
+                <TableSection>
+                <TextCell 
+                        Text="List of all colors"
+                        Command="{Binding NavigateCommand}"
+                        CommandParameter="{x:Type local:ListColorsPage}"
+                        TextColor="Black"
+                    />
+                <TextCell   
+                        Text="Objects from argb parameters"
+                        Command="{Binding NavigateCommand}"
+                        CommandParameter="{x:Type local:HSLColorPage}"
+                        TextColor="Black"
+                    />
+                <TextCell   
+                        Text="Gradient"
+                        Command="{Binding NavigateCommand}"
+                        CommandParameter="{x:Type local:GradientPage}"
+                        TextColor="Black"
+                    />
+            </TableSection>
+            </TableRoot>
+        </TableView>
+</ContentPage>

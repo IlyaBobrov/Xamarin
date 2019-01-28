@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:local="clr-namespace:task1"
+             mc:Ignorable="d"
+             x:Class="task1.HSLColorPage"
+             Title="ARGB Color Page"
+             BackgroundColor="White">
+
+    <Grid RowSpacing="0" ColumnSpacing="0" Margin="5" >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+
+        </Grid.RowDefinitions>
+
+        <BoxView Grid.Row="0" Grid.Column="0" Margin="5" Color ="{local:ARGB R=1.0, G=0.0, B=0.0, A=0.6}" CornerRadius="20" />
+        <BoxView Grid.Row="0" Grid.Column="1" Margin="5" Color ="{local:ARGB R=0.9, G=0.3, B=0.0, A=0.5}" CornerRadius="20" />
+        <BoxView Grid.Row="1" Grid.Column="0" Margin="5" Color ="{local:ARGB R=0.9, G=0.9, B=0.1, A=0.5}" CornerRadius="20" />
+        <BoxView Grid.Row="1" Grid.Column="1" Margin="5" Color ="{local:ARGB R=0.5, G=1.0, B=0.0, A=0.9}" CornerRadius="20" />
+        <BoxView Grid.Row="2" Grid.Column="0" Margin="5" Color ="{local:ARGB R=0.0, G=1.0, B=1.0, A=0.7}" CornerRadius="20" />
+        <BoxView Grid.Row="2" Grid.Column="1" Margin="5" Color ="{local:ARGB R=0.8, G=0.4, B=0.9, A=0.8}" CornerRadius="20" />
+        <BoxView Grid.Row="3" Grid.Column="0" Margin="5" Color ="{local:ARGB R=0.5, G=0.5, B=0.5, A=0.5}" CornerRadius="20" />
+        <BoxView Grid.Row="3" Grid.Column="1" Margin="5" Color ="{local:ARGB R=0.2, G=0.1, B=0.9, A=0.5}" CornerRadius="20" />
+    </Grid>
+
+</ContentPage>

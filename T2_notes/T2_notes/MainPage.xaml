@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="T2_notes.MainPage">
+
+    <Grid>
+        <Grid x:Name="noteContainer"
+              BackgroundColor="SlateGray">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <StackLayout x:Name="leftContainer"
+                         Grid.Row="0"
+                         Grid.Column="0"
+                         VerticalOptions="Start"/>
+            <StackLayout x:Name="rightContainer"
+                         Grid.Row="0"
+                         Grid.Column="1"
+                         VerticalOptions="Start"/>
+        </Grid>
+        <Button x:Name="add"
+                Text="+"
+                CornerRadius="40"
+                HeightRequest="40"
+                WidthRequest="40"
+                HorizontalOptions="End" 
+                VerticalOptions="End"
+                Margin="10"
+                Clicked="add_Clicked"/>
+    </Grid>
+
+</ContentPage>

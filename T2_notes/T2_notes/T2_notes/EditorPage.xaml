@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="T2_notes.EditorPage">
+    
+    <ContentPage.ToolbarItems>
+        <ToolbarItem 
+            x:Name="addNote" 
+            Text="Сохранить" 
+            Clicked="addNote_Clicked"/>
+    </ContentPage.ToolbarItems>
+    
+    <ContentPage.Content>
+        
+        <Grid x:Name="container"
+              BackgroundColor="Snow">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+
+            </Grid.RowDefinitions>
+            
+                
+            <Label x:Name="timeAndSymb"
+                   Grid.Row="0"
+                   Grid.Column="0"
+                   Margin="10, 10, 10, 20"
+                   TextColor="Gray"/>
+            
+            <Label
+                   x:Name="len"
+                   Grid.Row="0"
+                   Grid.Column="1"
+                   Margin="10, 10, 10, 20"
+                   TextColor="Gray"/>
+            
+            <Editor x:Name="textHolder"
+                    Grid.Row="0"
+                    Grid.ColumnSpan="2"
+                    TextColor="Black"
+                    Margin="5,20, 5, 0"
+                    TextChanged="textHolder_TextChanged"/>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

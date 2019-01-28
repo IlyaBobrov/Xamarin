@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="T2_notes.MainPage"
+             Title="Мои заметки">
+
+    <Grid>
+        <Grid x:Name="noteContainer" BackgroundColor="Snow">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Entry 
+                    x:Name="findEntry"
+                   TextColor="White"
+                   Grid.Row="0"
+                   Grid.Column="0"
+                   Grid.ColumnSpan="2"
+                   Margin="0, 1, 0, 0"
+                   HeightRequest="50"
+                   WidthRequest="500"
+                   BackgroundColor="YellowGreen"
+                   VerticalOptions="StartAndExpand"
+                   HorizontalOptions="StartAndExpand"
+            />
+            
+            <StackLayout x:Name="leftContainer"
+                     VerticalOptions="Start"
+                     Grid.Column="0"
+                     Grid.Row="1"
+                     Margin="5,5,0,5"
+            />
+            <StackLayout x:Name="rightContainer"
+                         VerticalOptions="Start"
+                         Margin="0,5,5,5"
+                         Grid.Column="1"
+                         Grid.Row="1"
+            />
+        </Grid>
+        <Button 
+                Text="+"
+                x:Name="add"
+                FontSize="25"
+                TextColor="Black"
+                CornerRadius="40"
+                WidthRequest="70"
+                HeightRequest="70"
+                Margin="10,10,20,30"
+                VerticalOptions="End"
+                HorizontalOptions="End" 
+                Clicked="addNote_Clicked"
+                BackgroundColor="YellowGreen"
+         />
+    </Grid>
+
+</ContentPage>
