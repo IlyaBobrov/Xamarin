@@ -1,0 +1,14 @@
+D:\Program Files(VS)\Xamarin\StoreWater\StoreWater\bin\Debug\netstandard2.0\StoreWater.deps.json
+D:\Program Files(VS)\Xamarin\StoreWater\StoreWater\bin\Debug\netstandard2.0\StoreWater.dll
+D:\Program Files(VS)\Xamarin\StoreWater\StoreWater\bin\Debug\netstandard2.0\ref\StoreWater.dll
+D:\Program Files(VS)\Xamarin\StoreWater\StoreWater\bin\Debug\netstandard2.0\StoreWater.pdb
+D:\Program Files(VS)\Xamarin\StoreWater\StoreWater\obj\Debug\netstandard2.0\StoreWater.csprojAssemblyReference.cache
+D:\Program Files(VS)\Xamarin\StoreWater\StoreWater\obj\Debug\netstandard2.0\App.xaml.g.cs
+D:\Program Files(VS)\Xamarin\StoreWater\StoreWater\obj\Debug\netstandard2.0\BasketPage.xaml.g.cs
+D:\Program Files(VS)\Xamarin\StoreWater\StoreWater\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+D:\Program Files(VS)\Xamarin\StoreWater\StoreWater\obj\Debug\netstandard2.0\StoreWater.AssemblyInfoInputs.cache
+D:\Program Files(VS)\Xamarin\StoreWater\StoreWater\obj\Debug\netstandard2.0\StoreWater.AssemblyInfo.cs
+D:\Program Files(VS)\Xamarin\StoreWater\StoreWater\obj\Debug\netstandard2.0\XamlC.stamp
+D:\Program Files(VS)\Xamarin\StoreWater\StoreWater\obj\Debug\netstandard2.0\StoreWater.dll
+D:\Program Files(VS)\Xamarin\StoreWater\StoreWater\obj\Debug\netstandard2.0\ref\StoreWater.dll
+D:\Program Files(VS)\Xamarin\StoreWater\StoreWater\obj\Debug\netstandard2.0\StoreWater.pdb

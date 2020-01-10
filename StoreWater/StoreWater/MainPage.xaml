@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             Title="Storage"
+            
+             x:Class="StoreWater.MainPage">
+
+    <StackLayout Padding="20">
+        
+        <StackLayout x:Name="Stack">
+        </StackLayout>
+
+        <Label  Text="Welcome to Bobrov Beverage Store"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand"
+                FontFamily = "18386.ttf#v_CCMeanwhile-Regular"
+                TextColor = "#c9c9c9"
+                FontSize="Micro"
+                />
+
+        <Grid VerticalOptions="EndAndExpand">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2,5*"/>
+                <ColumnDefinition Width="2,5*"/>
+                <ColumnDefinition Width="2,5*"/>
+                <ColumnDefinition Width="2,5*"/>
+            </Grid.ColumnDefinitions>
+
+            <Button Text="ADD"
+                    CornerRadius="5"
+                    Grid.Column="3"
+                    VerticalOptions="End"
+                    WidthRequest="50"
+                    HeightRequest="50"
+                    Margin="0"
+                    BackgroundColor="#f5f5dc"
+                    BorderColor="#848482"
+                    BorderWidth="1"
+                    TextColor="#848482"
+                    FontFamily = "18386.ttf#v_CCMeanwhile-Regular"
+                    Clicked="New_drink">
+            </Button>
+
+            <Button
+                Text="Order"
+                CornerRadius="5"
+                Grid.Column="0"
+                VerticalOptions="Start"
+                WidthRequest="100"
+                HeightRequest="50"
+                BackgroundColor="#f5f5dc"
+                BorderColor="#848482"
+                BorderWidth="1"
+                Margin="0"
+                FontFamily = "18386.ttf#v_CCMeanwhile-Regular"
+                TextColor="#848482"
+                Clicked="Confirm_drinks">
+            </Button>
+
+        </Grid>
+        
+    </StackLayout>
+</ContentPage>
+    
+        

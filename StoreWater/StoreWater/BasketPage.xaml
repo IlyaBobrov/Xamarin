@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="StoreWater.BasketPage">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout  x:Name="StackLayoutMap" BackgroundColor="#F8F7FF">
+                <Picker Title="Select drink"
+                        TitleColor="#848482" 
+                        TextColor="#848482"
+                        FontFamily = "18386.ttf#v_CCMeanwhile-Regular"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="Start"
+                        ItemsSource="{Binding Drinks}"
+                        ItemDisplayBinding="{Binding Name}"
+                        SelectedItem="{Binding SelectedDrink}"
+                        SelectedIndexChanged="Picker_SelectedIndexChanged"
+                        >
+                        <Picker.FontFamily>
+                            <OnPlatform x:TypeArguments = "x:String">
+                                <On Platform="Android" Value = "18386.ttf#v_CCMeanwhile-Regular" />
+                            </OnPlatform>
+                        </Picker.FontFamily>
+                </Picker>
+                
+                <Image 
+                   Source="{Binding SelectedDrink.ImageUrl}" 
+                   HeightRequest="400" WidthRequest="300"
+                   HorizontalOptions="CenterAndExpand" 
+                   VerticalOptions="Center"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
